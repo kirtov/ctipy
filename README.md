@@ -3,8 +3,11 @@
 + [Introduction](#Intro)
 + [Installation](#Installation)
 + [Usage](#Usage)
+
   1.[Uploading regular file](#Uploading-regular-file)
+  
   2.[Uploading image](#Uploading-image)
+  
   3.[Uploading tables](#Uploading tables)
 
 ## Intro
