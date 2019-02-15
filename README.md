@@ -8,7 +8,7 @@
   
   2.[Uploading image](#Uploading-image)
   
-  3.[Uploading tables](#Uploading tables)
+  3.[Uploading tables](#Uploading-tables)
 
 ## Intro
 Tiny lib which allows you to automatically upload images and tables (and tables with images!) onto Confluence page. 
