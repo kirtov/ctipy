@@ -1,9 +1,11 @@
 # CTIPY (Confluence Tables and Images for PYthon)
 
-+ [Intro](#Intro)
-  1. a
-  2. b
-+ c
++ [Introduction](#Intro)
++ [Installation](#Installation)
++ [Usage](#Usage)
+  1.[Uploading regular file](#Uploading-regular-file)
+  2.[Uploading image](#Uploading-image)
+  3.[Uploading tables](#Uploading tables)
 
 ## Intro
 Tiny lib which allows you to automatically upload images and tables (and tables with images!) onto Confluence page. 
@@ -63,7 +65,8 @@ Idea of uploading images is the same of uploading files:
 You can run:
 ```cti.upload_image()``` with or without argument `append_to_page`.
 
-### Uploading tables (pd.DataFrame)
+### Uploading tables
+To represent tables CTIPY supports only pandas DataFrames.
 Uploaded tables are always placed in the bottom of the page.
 The most interesting feature of CTIPY is that it can upload tables with images inside.
 To upload table you have to create arbitrar pandas DataFrame. To 'put' files in columns you have to put path to the file
