@@ -37,7 +37,7 @@ def upload_file(confluence, page_id, path, append_to_page=False,
         page_body = page['body']['storage']['value']
         page_body += wrap_func(filename)
         confluence.update_page(None, page_id, page['title'],
-                               page_body)
+                               page_body, minor_edit=True)
     return filename
 
 
