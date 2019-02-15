@@ -9,6 +9,9 @@
   2.[Uploading image](#Uploading-image)
   
   3.[Uploading tables](#Uploading-tables)
+  
+  4.[Additions](#Confluence-API-additions)
+    * [Clearing page](#Clearing-page)
 
 ## Intro
 Tiny lib which allows you to automatically upload images and tables (and tables with images!) onto Confluence page. 
@@ -44,8 +47,12 @@ cti = CTIConfluence(url='https://yourcompany.atlassian.net/wiki',
 
 Notes:
 * Format of URL of your company's Confluence can be different from 'https://yourcompany.atlassian.net/wiki'
+* **BE CAREFULL: page_id must be provided to functions as a string, but not int**
 * page_id - ID of page that you want to interact with. It is ~9 digit number which can be found in URL of confluence page
 preceding its name. E.G.: https://yourcompany.atlassian.net/wiki/spaces/SOME_SPACE/pages/PAGE_ID/PAGE_NAME
+
+Most contribution of this library is correct uploading and displaying of pandas DataFrames on Confluence pages.
+However `CTIConfluence` directly inherits `Confluence` class from https://github.com/atlassian-api/atlassian-python-api which provides big amount of low-level functions. Some usefule examples that you can use listed here
 
 After it you can interact with page:
 
@@ -88,4 +95,11 @@ And after (30 seconds - several minutes) you table will be appended to your page
 In `columns_with_files` you have provide list of DataFrame columns which consists paths to files.
 In `columns_with_images` - paths to images. All other columns will be treated as plain text.
 
-
+### Confluence API additions
+#### Clearing page
+CTIPY can only append file/image/table to the end of the page. However if you want to update your report after each
+experiment you don't want to see huge amount of tables on the page. So to totally clean the page you can run:
+```
+cti.update_page(None, ID_OF_YOUR_PAGE, TITLE_OF_YOUR_PAGE, '')
+```
+So after each experiment finish you can update DataFrame with results, clean the page and upload new version of report.
