@@ -29,8 +29,8 @@ class CTIConfluence(Confluence):
             Arguments:
                 path (str): Path to the file on your local filesystem.
                 append_to_page (bool): Whether to append this file to the
-                    bottom of page.
-                    If False, then it can be found in `Attachments` section
+                    bottom of the page.
+                    If False, then file can be found in `Attachments` section
                     of the page.
 
             Returns (str):
@@ -47,7 +47,7 @@ class CTIConfluence(Confluence):
             Arguments:
                 path (str): Path to the image on your local filesystem.
                 append_to_page (bool): Whether to append this image to the
-                    bottom of page.
+                    bottom of the page.
                     If False, then it can be found in `Attachments` section
                     of the page.
 
@@ -60,7 +60,7 @@ class CTIConfluence(Confluence):
     def upload_table(self, dataframe, columns_with_files=None,
                      columns_with_images=None):
         """
-            Uploads table to the page and append to the bottom of the page.
+            Uploads table to the page and appends it to the bottom of the page.
 
             See README on github for more explanation and examples.
 
