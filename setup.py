@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ctipy',
-    version='0.1.5',
+    version='0.1.6',
     author='Yuriy Volkov',
     author_email='yurijvolkov1@yandex.ru',
     description='Small package for easily uploading data to Confluence.',
