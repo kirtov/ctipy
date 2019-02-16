@@ -59,13 +59,13 @@ To upload file you can run:
 ```
 cti.upload_file('path_to_the_file_on_you_local_fs')
 ```
-After this command file will be attached to your page and you can find it in `Attachments` section of your page. After that you can manually put it onto the page via browser.
+After this command, file will be attached to your page and you can find it in `Attachments` section of your page. After that you can manually put it onto the page via browser.
 
 If you want to put file onto the page automatically, you can run:
 ```
 cti.upload_file('path_to_the_file_on_you_local_fs', append_to_page=True)
 ```
-After this command file will be attached to your page and placed at the bottom.
+After this command, file will be attached to your page and placed at the bottom.
 
 ### Uploading image
 Supported types: png, jpg, jpeg
