@@ -63,13 +63,15 @@ After this command file will be attached to your page and you can find it in `At
 
 If you want to put file onto the page automatically, you can run:
 ```
-cti.upload_file('/home/yvolkov/tmp/ckpt.meta', append_to_page=True)
+cti.upload_file('path_to_the_file_on_you_local_fs', append_to_page=True)
 ```
 After this command file will be attached to your page and placed at the bottom.
 
 ### Uploading image
 Supported types: png, jpg, jpeg
-Idea of uploading images is the same as uploading files:
+
+Idea of uploading images is the same as uploading files.
+
 You can run:
 ```cti.upload_image()``` with or without argument `append_to_page`.
 
