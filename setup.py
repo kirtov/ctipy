@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ctipy',
-    version='0.1.4',
+    version='0.1.5',
     author='Yuriy Volkov',
     author_email='yurijvolkov1@yandex.ru',
     description='Small package for easily uploading data to Confluence.',
@@ -13,5 +13,6 @@ setup(
     long_description_content_type="text/markdown",
     url='https://github.com/yurijvolkov/ctipy',
     packages=find_packages(),
-    install_requires=['atlassian-python-api-cti']
+    install_requires=['atlassian-python-api-cti',
+                      'pandas']
 )
