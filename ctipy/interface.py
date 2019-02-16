@@ -40,7 +40,7 @@ class CTIConfluence(Confluence):
         return upload_file(self, self.page_id, path, append_to_page)
 
     def upload_image(self, path, append_to_page=False):
-         """
+        """
             Uploads image to the page.
             Supported types: PNG, JPEG, JPG.
 
